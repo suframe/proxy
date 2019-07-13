@@ -1,11 +1,22 @@
 {
-    "name": "suframe/manage",
-    "description": "summer manage",
+    "name": "suframe/suframe-proxy",
+    "description": "suframe proxy",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "qian",
             "email": "330576744@qq.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "suframe\\proxy\\": "src"
+        }
+    },
+    "require": {
+        "suframe/core": "^0.1"
+    },
+    "require-dev": {
+        "swoole/ide-helper": "@dev"
+    }
 }
