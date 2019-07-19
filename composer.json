@@ -13,6 +13,7 @@
             "suframe\\proxy\\": "src"
         }
     },
+    "minimum-stability": "dev",
     "require": {
         "suframe/core": "dev-master@dev"
     },
