@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "suframe/core": "^0.1"
+        "suframe/core": "dev-master"
     },
     "require-dev": {
         "swoole/ide-helper": "@dev"
