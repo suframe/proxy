@@ -30,6 +30,7 @@ class HttpDriver
      */
     protected $proxy;
     protected $registerPort;
+    protected $hasLog = false;
 
     /**
      * @param InputInterface $input
@@ -40,8 +41,12 @@ class HttpDriver
     {
         $this->io = new SymfonyStyle($input, $output);
         $config = Config::getInstance();
+        //是否启用日志
+        $this->hasLog = $config->get('app.log');
+
         $http = new Server();
         $this->config = $config->get('tcp')->toArray();
+
         //守护进程运行
         if (true === $input->hasParameterOption(['--daemon', '-d'], true)) {
             $this->config['swoole']['daemonize'] = 1;
@@ -123,24 +128,36 @@ class HttpDriver
         }
         $response->header('Content-Type', 'application/json');
         EventManager::get()->trigger('http.request', null, ['request' => &$request]);
+        $end = false;
+        $out = null;
+        $status = 200;
         try {
             $proxy = Proxy::getInstance();
             $out = $proxy->dispatch($request);
         } catch (\Exception $e) {
-            $response->status(500);
+            $status = 500;
+            $response->status($status);
             $response->write($e->getMessage());
-            return false;
+            $end = true;
         }
-        if (!$out) {
-            $response->status(500);
-            $response->write('error');
-            return false;
+        if(!$end){
+            if (!$out) {
+                $status = 404;
+                $response->status($status);
+                $response->write('error');
+                $end = true;
+            }
         }
-        $response->write($out);
-        go(function () use ($request, $out) {
-            EventManager::get()->trigger('tcp.response.after', $this, [
+        if(!$end){
+            $response->write($out);
+        }
+
+        go(function () use ($request, $out, $status) {
+            EventManager::get()->trigger('http.request.after', $this, [
                 'request' => $request,
                 'out' => $out,
+                'hasLog' => $this->hasLog,
+                'status' => $status,
             ]);
         });
     }
