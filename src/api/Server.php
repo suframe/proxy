@@ -15,7 +15,8 @@ class Server extends Base
      * @return bool
      * @throws \Exception
      */
-    public function register($args){
+    public function register($args)
+    {
         return \suframe\core\components\register\Server::getInstance()->register($args);
     }
 
@@ -23,7 +24,8 @@ class Server extends Base
      * 获取全部服务
      * @return array
      */
-    public function get(){
+    public function get()
+    {
         $config = ClientAlias::getInstance()->reloadServer();
         $servers = $config->get('servers');
         return $servers->toArray();
@@ -32,7 +34,8 @@ class Server extends Base
     /**
      *
      */
-    public function syncRpc(){
+    public function syncRpc()
+    {
         return \suframe\core\components\register\Server::getInstance()->buildRpcMeta();
     }
 
