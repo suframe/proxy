@@ -39,27 +39,6 @@ class HttpListener implements ListenerAggregateInterface {
 	}
 
 	public function requestAfter(EventInterface $e){
-        $hasLog = $e->getParam('hasLog');
-        if($hasLog){
-            return $this->sendLog($e);
-        }
-    }
-
-    private function sendLog(EventInterface $e){
-        /** @var Request $request */
-        $request = $e->getParam('request');
-        $status = $e->getParam('status');
-        $info = [
-            'status' => $status,
-            'request_method' => $request->server['request_method'] ?? 'get',
-            'remote_addr' => $request->server['remote_addr'] ?? '',
-            'server_port' => $request->server['server_port'] ?? 0,
-            'request_uri' => $request->server['request_uri'] ?? '',
-            'query_string' => $request->server['query_string'] ?? '',
-            'request_time' => $request->server['request_time'] ?? 0,
-            'x_request_id' => $request->get['x_request_id'],
-        ];
-        SRpc::route('/log/Server')->write(LogConfig::TYPE_REQUEST, $info);
     }
 
 }

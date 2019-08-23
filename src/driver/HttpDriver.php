@@ -30,7 +30,6 @@ class HttpDriver
      */
     protected $proxy;
     protected $registerPort;
-    protected $hasLog = false;
 
     /**
      * @param InputInterface $input
@@ -41,8 +40,6 @@ class HttpDriver
     {
         $this->io = new SymfonyStyle($input, $output);
         $config = Config::getInstance();
-        //是否启用日志
-        $this->hasLog = $config->get('app.log');
 
         $http = new Server();
         $this->config = $config->get('tcp')->toArray();
@@ -156,7 +153,6 @@ class HttpDriver
             EventManager::get()->trigger('http.request.after', $this, [
                 'request' => $request,
                 'out' => $out,
-                'hasLog' => $this->hasLog,
                 'status' => $status,
             ]);
         });
