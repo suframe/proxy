@@ -5,8 +5,7 @@ if(file_exists(__DIR__ . '/servers.php')){
 }
 
 return [
-    'app' => [
-        'log' => '/sapps/Log'
-    ],
+    'app' => [],
     'servers' => $servers,
+    'sapps' => require __DIR__ . '/sapps.php',
 ];

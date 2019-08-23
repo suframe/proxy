@@ -7,6 +7,7 @@
 namespace suframe\proxy\events;
 
 use suframe\core\components\Config;
+use suframe\core\components\log\Log;
 use suframe\core\components\log\LogConfig;
 use suframe\core\components\rpc\SRpc;
 use Swoole\Http\Request;
@@ -27,7 +28,7 @@ class LogListener implements ListenerAggregateInterface
      */
     public function attach(EventManagerInterface $events, $priority = 1)
     {
-        $this->logRoute = Config::getInstance()->get('app.log');
+        $this->logRoute = Config::getInstance()->get('sapps.log');
         if ($this->logRoute) {
             $this->listeners[] = $events->attach('http.request.after', [$this, 'requestAfter'], $priority);
         }
@@ -48,7 +49,7 @@ class LogListener implements ListenerAggregateInterface
             'request_time' => $request->server['request_time'] ?? 0,
             'x_request_id' => $request->get['x_request_id'],
         ];
-        SRpc::route($this->logRoute)->write(LogConfig::TYPE_REQUEST, $info);
+        Log::getInstance()->request($info, 'proxy');
     }
 
 }

@@ -179,3 +179,42 @@ new proxy created
 [2019-08-23 09:33:51 $790.0]	INFO	Server is reloading all workers now
 [2019-08-23 09:34:03 $790.0]	INFO	Server is reloading all workers now
 [2019-08-23 09:34:08 $790.0]	INFO	Server is reloading all workers now
+[2019-08-23 14:02:41 *900.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 *901.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 #786.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 $790.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 *898.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 *896.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 *897.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:02:43 *896.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 14:07:13 $790.0]	WARNING	swManager_check_exit_status: worker#2[pid=898] abnormal exit, status=255, signal=0
+[2019-08-23 14:07:14 $790.0]	WARNING	swManager_check_exit_status: worker#3[pid=900] abnormal exit, status=255, signal=0
+[2019-08-23 14:11:31 $790.0]	WARNING	swManager_check_exit_status: worker#4[pid=901] abnormal exit, status=255, signal=0
+[2019-08-23 14:11:36 #786.5]	INFO	Server is shutdown now
+[2019-08-23 14:55:34 $168.0]	INFO	Server is reloading all workers now
+[2019-08-23 14:58:54 $286.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:00:14 $286.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:00:53 $286.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:01:29 $286.0]	WARNING	swManager_check_exit_status: worker#2[pid=569] abnormal exit, status=255, signal=0
+[2019-08-23 15:01:30 $286.0]	WARNING	swManager_check_exit_status: worker#3[pid=570] abnormal exit, status=255, signal=0
+[2019-08-23 15:04:15 $583.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:04:23 $626.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:04:26 $626.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:04:29 $626.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:50:15 $1031.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:50:28 $1066.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:50:37 $1086.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:50:39 $1086.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:50:45 $1086.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:56:53 $1289.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:56:59 $1289.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:57:06 $1320.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:57:08 $1320.0]	INFO	Server is reloading all workers now
+[2019-08-23 15:57:10 $1320.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:04:19 $1410.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:04:20 $1410.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:06:15 $1410.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:06:18 $1410.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:06:22 $1469.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:06:23 $1469.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:06:25 $1469.0]	INFO	Server is reloading all workers now
