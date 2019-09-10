@@ -218,3 +218,54 @@ new proxy created
 [2019-08-23 16:06:22 $1469.0]	INFO	Server is reloading all workers now
 [2019-08-23 16:06:23 $1469.0]	INFO	Server is reloading all workers now
 [2019-08-23 16:06:25 $1469.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:52:54 $1769.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:53:00 $1769.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:53:03 $1769.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:55:00 $1822.0]	INFO	Server is reloading all workers now
+[2019-08-23 16:55:03 $1822.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:12:19 $1967.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:12:21 $1967.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:12:24 $1967.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:15:30 $2035.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:15:34 $2055.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:15:35 $2055.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:15:36 $2055.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:41:03 $2055.0]	INFO	Server is reloading all workers now
+[2019-08-23 17:43:22 $2055.0]	INFO	Server is reloading all workers now
+[2019-08-23 18:09:37 $2268.0]	INFO	Server is reloading all workers now
+[2019-08-23 18:09:42 $2268.0]	INFO	Server is reloading all workers now
+[2019-08-23 18:10:27 $2268.0]	INFO	Server is reloading all workers now
+[2019-08-23 18:15:24 #2264.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 $2268.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2318.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2313.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2316.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2316.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2314.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 #2264.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2313.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2314.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2319.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2319.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 *2318.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-23 18:15:24 $2268.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-26 15:05:55 $317.0]	INFO	Server is reloading all workers now
+[2019-08-26 15:06:22 $317.0]	INFO	Server is reloading all workers now
+[2019-08-26 15:06:52 $317.0]	INFO	Server is reloading all workers now
+[2019-08-26 15:12:12 $575.0]	INFO	Server is reloading all workers now
+[2019-08-26 15:12:59 $575.0]	INFO	Server is reloading all workers now
+[2019-08-27 18:21:29 *851.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 $845.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *855.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *853.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 #841.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *854.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *852.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *852.1]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *853.2]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 $845.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 #841.5]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *854.3]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *851.0]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-08-27 18:21:29 *855.4]	WARNING	swSignalfd_onSignal (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-09-10 10:35:25 $1255.0]	INFO	Server is reloading all workers now
